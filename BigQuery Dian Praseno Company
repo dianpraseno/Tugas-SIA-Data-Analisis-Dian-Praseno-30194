@@ -1,0 +1,18 @@
+-- Filter tanggal, gabungkan tabel, dan urutkan berdasarkan penjualan tertinggi
+SELECT 
+  p.id_barang,
+  pr.id_produksi,
+  SUM(p.jumlah_terjual) AS total_penjualan
+FROM 
+  `dian-praseno.company.penjualan` p
+JOIN 
+  `dian-praseno.company.produksi` pr
+ON 
+  p.id_barang = pr.id_barang
+WHERE 
+  p.tanggal_jual BETWEEN '2024-01-01' AND '2024-06-01'
+  AND MOD(pr.id_produksi, 2) = 0 -- ID produksi genap
+GROUP BY 
+  p.id_barang, pr.id_produksi
+ORDER BY 
+  total_penjualan DESC;

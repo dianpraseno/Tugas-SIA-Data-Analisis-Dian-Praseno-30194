@@ -1,0 +1,21 @@
+id_barang,nama_barang,jumlah_stok,harga_satuan
+1,Produk A,150,10000
+2,Produk B,200,20000
+3,Produk C,250,15000
+4,Produk D,300,12000
+5,Produk E,180,18000
+6,Produk F,220,17000
+7,Produk G,270,21000
+8,Produk H,320,16000
+9,Produk I,190,11000
+10,Produk J,210,13000
+11,Produk K,160,14000
+12,Produk L,230,23000
+13,Produk M,280,22000
+14,Produk N,150,25000
+15,Produk O,210,24000
+16,Produk P,170,19000
+17,Produk Q,250,20000
+18,Produk R,190,13000
+19,Produk S,210,15000
+20,Produk T,200,14000
